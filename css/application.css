@@ -1,0 +1,360 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background-color: #ecf0f3; 
+}
+
+.app-div{
+    width: 800px;
+    height: 600px;
+    padding: 20px 35px 5px 35px;
+    border-radius: 40px;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,-13px -13px 20px #fff;
+    position: relative;
+}
+
+.app-div h1.cross{
+    font-size: 25px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.app-div h1.cross:hover{
+    background-color: #fff;
+    color: red;
+    
+}
+
+.app-div h1.cross:active {
+    transform: scale(.9);
+}
+
+.title{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.sub-title{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+}
+
+.fields {
+    width: 100%;
+    padding: 30px 5px 5px 5px;
+}
+
+.fields select.department{
+    width: 100%;
+    border: 2px #feffff;
+    border-radius: 30px;
+    background: none;
+    font-size: 15px;
+    box-shadow: 13px 13px 20px #cbced1,-13px -13px 20px #fff;
+    color: #555;
+    padding: 10px 10px 10px 5px;
+    transition: all 0.5s;
+}
+
+.fields input.form-control{
+    display: inline-block;
+    border: 2px #396aff solid;
+    border-radius: 30px;
+    background: none;
+    font-size: 15px;
+    box-shadow: 13px 13px 20px #cbced1,-13px -13px 20px #e9eefc;
+    color: #555;
+    padding: 10px 10px 10px 5px;
+    margin: auto 15px 15px 15px;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.fields select.department:hover{
+    background: #6b89e6;
+    color: #fff;
+}
+
+
+.university,
+.level,.campus,.quali{
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1,inset -8px -8px -8px rgb(230, 228, 228);
+}
+
+div.doc{
+    display: block;
+    border: 1px #000000 solid;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+}
+
+
+.btn{
+    outline: none;
+    border: none;
+    width: 15%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    background: #396aff;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+    transition: all 0.5s;
+}
+.btn-cancel{
+    outline: none;
+    border: none;
+    width: 25%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    background: #802105;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    color: #396aff;
+    background-color: #fff;
+}
+
+.submit{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    background: #396aff;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+    transition: all 1s;
+}
+
+
+.data{
+    display: none;
+}
+
+.submit:hover{
+    background: #fff;
+    color: #396aff;
+}
+
+/* Payment form */
+
+.wrapper{
+    background-color: #fff;
+    width: 500px;
+    padding: 25px;
+    margin: 25px auto 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper h2{
+    background-color: #fcfcfc;
+    color: #396aff;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px dotted #333;
+}
+
+.wrapper h4{
+    padding-bottom: 5px;
+    color: #396aff;
+}
+
+.input-group{
+    margin: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+.input-box{
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+}
+.input-box:last-child{
+    margin-right: 0;
+}
+
+.name{
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background-color: #fcfcfc;
+    border: 1px solid #00000033;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: #333;
+}
+
+.name:focus, .dob:focus{
+    -webkit-box-shadow:0 0 2px 1px #396aff;
+    -moz-box-shadow:0 0 2px 1px #396aff;
+    box-shadow: 0 0 2px 1px #396aff;
+    border: 1px solid #6b89e6;
+}
+
+.input-box .icon{
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+    font-size: 20px;
+    pointer-events: none;
+    border: 1px solid #00000033;
+    border-right: none;
+}
+
+.name:focus + .icon{
+    background-color: #396aff;
+    color: #fff;
+    border-right: 1px solid #396aff;
+    border: none;
+    transition: 1s;
+}
+
+.dob{
+    width: 30%;
+    padding: 14px;
+    text-align: center;
+    background-color: #fcfcfc;
+    transition: 0.3s;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    border-radius: 3px;
+}
+
+.radio{
+    display: none;
+}
+
+.input-box label{
+    width: 50%;
+    padding: 13px;
+    background-color: #fcfcfc;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border: 1px solid #c0bfbf;
+}
+
+.input-box label:first-of-type{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+}
+
+.input-box label:last-of-type{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.radio:checked + label{
+    background-color: #396aff;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.input-box select.department{
+    display: inline-block;
+    width: 50%;
+    padding: 12px;
+    background-color: #fcfcfc;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.input-box select.department:focus{
+    background-color: #396aff;
+    color: #fff;
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    background: transparent;
+    border: none;
+    background: #396aff;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.35s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    background: #03258a;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+td,th{
+    height: 50px;
+    vertical-align: center;
+    border: 1px solid black;
+}
